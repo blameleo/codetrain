@@ -1,12 +1,27 @@
-import Content from "./Content";
-import Home from "./Home";
-import TestContextProvider from "./context/TestContext";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Counter from "./components/Counter";
+import Form from "./components/Form";
+import FormClass from "./components/FormClass";
 
 function App() {
   return (
-    <div className="" style={{fontSize: 50}}>
- codetrain is awesome.React works!!
+    // <Router>
+    //  <Navbar/>
+    //   <Routes>
+    //     <Route path="/" element={<Home />} />
+    //     <Route path="/cart" element={<Cart />} />
+    //   </Routes>
+  
+    // </Router>
+
+    <div>
+      {/* <Counter /> */}
+      {/* <Form/> */}
+      <FormClass/>
     </div>
+
   );
 }
 
